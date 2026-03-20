@@ -141,7 +141,7 @@ def process_pdfs_in_folder(folder_path, output_excel='extracted_voter_data.xlsx'
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Extract data from first pages of Electoral Roll PDFs into Excel.')
-    parser.add_argument('folder', nargs='?', default='.', help='Folder containing the PDFs (default: current directory)')
+    parser.add_argument('folder', nargs='?', default=r'C:\Users\jiten\Desktop\sir2026\MotherRoll', help='Folder containing the PDFs (default: C:\\Users\\jiten\\Desktop\\sir2026\\MotherRoll)')
     parser.add_argument('--output', default='extracted_voter_data.xlsx', help='Output Excel file name')
 
     args = parser.parse_args()
